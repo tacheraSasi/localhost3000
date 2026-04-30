@@ -1,8 +1,4 @@
-import {
-  createContext,
-  type PropsWithChildren,
-  use,
-} from "react";
+import { createContext, type PropsWithChildren, use } from "react";
 import { useOnboardingState } from "../hooks/useOnboardingState";
 
 interface AppContextType {

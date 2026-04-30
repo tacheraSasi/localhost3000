@@ -67,7 +67,10 @@ export default function PortainerWebView() {
         <View style={styles.header}>
           <TouchableOpacity
             onPress={handleGoBack}
-            style={[styles.headerButton, !canGoBack && styles.headerButtonDisabled]}
+            style={[
+              styles.headerButton,
+              !canGoBack && styles.headerButtonDisabled,
+            ]}
             disabled={!canGoBack}
           >
             <Ionicons
@@ -80,7 +83,9 @@ export default function PortainerWebView() {
           <View style={styles.headerCenter}>
             <View style={styles.urlRow}>
               <Ionicons
-                name={currentUrl.startsWith("https") ? "lock-closed" : "lock-open"}
+                name={
+                  currentUrl.startsWith("https") ? "lock-closed" : "lock-open"
+                }
                 size={12}
                 color={currentUrl.startsWith("https") ? "#23ae89" : "#ff9500"}
               />
@@ -90,10 +95,7 @@ export default function PortainerWebView() {
             </View>
           </View>
 
-          <TouchableOpacity
-            onPress={handleRefresh}
-            style={styles.headerButton}
-          >
+          <TouchableOpacity onPress={handleRefresh} style={styles.headerButton}>
             <Ionicons name="refresh" size={20} color="#ffffff" />
           </TouchableOpacity>
 

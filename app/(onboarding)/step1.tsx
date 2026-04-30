@@ -2,12 +2,7 @@ import ScreenLayout from "@/components/ScreenLayout";
 import { useCurrentTheme } from "@/context/CentralTheme";
 import { useSession } from "@/context/ctx";
 import { Ionicons } from "@expo/vector-icons";
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function OnboardingStep1() {
   const theme = useCurrentTheme();

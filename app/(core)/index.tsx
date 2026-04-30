@@ -40,10 +40,7 @@ export default function ConfigScreen() {
 
     // Basic URL validation
     if (!trimmed.startsWith("http://") && !trimmed.startsWith("https://")) {
-      Alert.alert(
-        "Invalid URL",
-        "URL must start with http:// or https://"
-      );
+      Alert.alert("Invalid URL", "URL must start with http:// or https://");
       return;
     }
 
@@ -133,9 +130,7 @@ export default function ConfigScreen() {
                 <Text style={[styles.settingTitle, { color: theme.text }]}>
                   Save URL for later
                 </Text>
-                <Text
-                  style={[styles.settingDesc, { color: theme.mutedText }]}
-                >
+                <Text style={[styles.settingDesc, { color: theme.mutedText }]}>
                   Remember this URL so you don't have to type it again
                 </Text>
               </View>

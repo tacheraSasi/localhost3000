@@ -1,18 +1,13 @@
 import { Stack } from "expo-router";
-import { View, StyleSheet } from "react-native";
 
 export default function AppLayout() {
-  const screenOptions = { headerShown: false };
-
   return (
-    <View style={styles.container}>
-      <Stack screenOptions={screenOptions} />
-    </View>
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen
+        name="webview"
+        options={{ animation: "slide_from_right" }}
+      />
+    </Stack>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

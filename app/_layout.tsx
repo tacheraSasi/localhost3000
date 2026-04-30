@@ -40,7 +40,7 @@ export default function Root() {
 }
 
 function RootNavigator() {
-  const { session, isOnboarded, isOnboardingLoading } = useSession();
+  const { isOnboarded, isOnboardingLoading } = useSession();
 
   if (isOnboardingLoading) {
     return null;
@@ -48,16 +48,12 @@ function RootNavigator() {
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Protected guard={!!session}>
+      <Stack.Protected guard={isOnboarded}>
         <Stack.Screen name="(core)" />
       </Stack.Protected>
 
-      <Stack.Protected guard={!session && !isOnboarded}>
+      <Stack.Protected guard={!isOnboarded}>
         <Stack.Screen name="(onboarding)" />
-      </Stack.Protected>
-
-      <Stack.Protected guard={!session}>
-        <Stack.Screen name="(auth)" />
       </Stack.Protected>
     </Stack>
   );

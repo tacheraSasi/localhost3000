@@ -1,69 +1,74 @@
 import { useColorScheme } from "react-native";
 
-const tintColorLight = "#98a75e";
-const tintColorDark = "#fff";
-export const brandColor = "#98a75e";
+// Portainer-inspired color palette
+const tintColorLight = "#0db7ed"; // Docker blue
+const tintColorDark = "#0db7ed";
+export const brandColor = "#BE2044"; // Portainer pink/magenta
 
 export const Colors = {
-  tabColors: {
-    home: "#178764ff", // home tab accent
-    profile: "#98a75e", // expo green accent for profile
-    feed: "#178764ff", // Spotify-like green for listening/audio
-    insights: "#6366f1", // Purple for analytics/data
-    "voice-memory": "#FFA726", // Amber for memories/nostalgia
-    me: "#FF6B6B", // Violet for personal/profile
-  },
   light: {
-    text: "#000",
-    background: "#fff",
+    text: "#333333",
+    background: "#ffffff",
     tint: tintColorLight,
     tabIconDefault: "#ccc",
     tabIconSelected: tintColorLight,
-    primary: "#98a75e",
+    primary: "#BE2044", // Portainer pink
     secondary: "#666666",
     surface: "#f5f5f5",
     border: "#e0e0e0",
-    card: "#fff",
+    card: "#ffffff",
     notification: "#ff3b30",
-    success: "#34c759",
+    success: "#23ae89", // Portainer green
     warning: "#ff9500",
     error: "#ff3b30",
-    // Button colors
-    buttonBackground: "#98a75e",
-    buttonText: "#000",
+    // Button colors - dark like Portainer's "Live connect"
+    buttonBackground: "#333333",
+    buttonText: "#ffffff",
     // Input colors
     inputBackground: "#f9f9f9",
     inputBorder: "#ddd",
-    inputText: "#000",
+    inputText: "#333333",
     inputPlaceholder: "#999",
     // Link colors
-    link: "#98a75e",
+    link: "#0db7ed", // Blue for interactive elements
+    // Portainer-specific
+    sidebar: "#2c3e50", // Dark sidebar
+    sidebarText: "#ecf0f1",
+    banner: "#e8e0f0", // Lavender news banner
+    dockerBlue: "#0db7ed",
+    statusGreen: "#23ae89",
   },
   dark: {
-    text: "#ffffff",
-    background: "#000000",
-    tint: "#98a75e",
+    text: "#ecf0f1",
+    background: "#1a1c20",
+    tint: "#0db7ed",
     tabIconDefault: "#cccccc",
-    tabIconSelected: "#98a75e",
-    primary: "#98a75e",
-    secondary: "#aaaaaa", // Lighter gray for secondary text
-    surface: "#111111", // Slightly lighter than background for cards/surfaces
-    border: "#333333",
-    card: "#111111",
+    tabIconSelected: "#0db7ed",
+    primary: "#BE2044",
+    secondary: "#aaaaaa",
+    surface: "#2c3e50",
+    border: "#3d4f5f",
+    card: "#2c3e50",
     notification: "#ff453a",
-    success: "#30d158",
+    success: "#23ae89",
     warning: "#ff9f0a",
     error: "#ff453a",
-    // Button colors - expo accent color
-    buttonBackground: "#ad8d19ff",
-    buttonText: "#000000",
-    // Input colors - dark inputs with white text
-    inputBackground: "#111111",
-    inputBorder: "#333333",
-    inputText: "#ffffff",
+    // Button colors
+    buttonBackground: "#BE2044",
+    buttonText: "#ffffff",
+    // Input colors
+    inputBackground: "#2c3e50",
+    inputBorder: "#3d4f5f",
+    inputText: "#ecf0f1",
     inputPlaceholder: "#888888",
     // Link colors
-    link: "#98a75e",
+    link: "#0db7ed",
+    // Portainer-specific
+    sidebar: "#1a1c20",
+    sidebarText: "#ecf0f1",
+    banner: "#3d2f5f",
+    dockerBlue: "#0db7ed",
+    statusGreen: "#23ae89",
   },
 };
 

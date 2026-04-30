@@ -52,12 +52,20 @@ export function useCurrentTheme() {
     // Extended colors for better UX
     subtleText: isDark ? "#cccccc" : "#666666",
     mutedText: isDark ? "#999999" : "#888888",
-    accent: isDark ? "#4dabf7" : "#1c7ed6",
+    accent: "#0db7ed", // Docker blue
 
     // Layout colors
-    cardBackground: isDark ? "#1a1a1a" : "#ffffff",
-    divider: isDark ? "#333333" : "#e0e0e0",
-    highlight: isDark ? "#2d2d2d" : "#f0f0f0",
+    cardBackground: isDark ? "#2c3e50" : "#ffffff",
+    divider: isDark ? "#3d4f5f" : "#e0e0e0",
+    highlight: isDark ? "#34495e" : "#f0f0f0",
+
+    // Portainer-specific
+    sidebar: isDark ? "#1a1c20" : "#2c3e50",
+    sidebarText: "#ecf0f1",
+    banner: isDark ? "#3d2f5f" : "#e8e0f0",
+    dockerBlue: "#0db7ed",
+    statusGreen: "#23ae89",
+    portainerPink: "#BE2044",
 
     // Shadow and overlay
     shadowColor: isDark ? "#000000" : "#000000",

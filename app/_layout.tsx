@@ -1,6 +1,5 @@
 import { Stack } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { Toaster } from "yooo-native";
 import { ThemeStatusBar } from "../context/CentralTheme";
 import { SessionProvider, useSession } from "../context/ctx";
 import { ThemeProvider } from "../context/ThemeProvider";
@@ -34,7 +33,6 @@ export default function Root() {
           <RootNavigator />
         </SessionProvider>
       </ThemeProvider>
-      <Toaster />
     </GestureHandlerRootView>
   );
 }
